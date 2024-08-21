@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    /* width: 1500px;  */
+    height: 125px; 
+    padding: 16px; 
+    background: white;  
+    justify-content: space-between; 
+    align-items: center; 
+    display: flex;
+}
+.Navlinks ul li {
+    justify-content: center; 
+    align-items: center; 
+    gap: 16px; 
+    display: flex;
+    text-align: center; 
+    color: #5048EF; 
+    font-size: 16px; 
+    font-family: Inter Display; 
+    font-weight: 400px; 
+    word-wrap: break-word;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: #5048EF;
+}

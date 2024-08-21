@@ -4,30 +4,31 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.Navbar{
-    width: 1500px; 
+body{
+    width: 1440px;
+}
+.Navbar{ 
     height: 125px; 
     padding-left: 120px; 
     padding-right: 120px; 
     padding-top: 30px; 
     padding-bottom: 30px; 
     background: white; 
-    box-shadow: 0px 3px 1.100000023841858px 1px rgba(0, 0, 0, 0.10); 
+    box-shadow: ; 
     justify-content: space-between; 
     align-items: center; 
     display: inline-flex;
 }
-.Navlinks ul li{
-    /* justify-content: center; 
+.Navlinks ul li{ 
+    justify-content: center; 
     align-items: center; 
     gap: 16px; 
     display: flex;
     text-align: center; 
     color: #5048EF; 
-    font-size: 16px; 
-    font-family: Inter Display; 
+    font-size: 16px;  
     font-weight: 400; 
-    word-wrap: break-word; */
+    word-wrap: break-word;
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -36,34 +37,15 @@
 }
 
 .Navlinks ul li:hover{
-    border-bottom: #5048EF solid 3px;
+    border-bottom: orange solid 1px ;
     cursor: pointer;
-    transition: 1s;
-    /* background:  grey; */
+    color: orange;
 }
 select{
     border-style: none;
     color: #5048EF;
     appearance: auto;
 }
-/* .Navlinks ul li:hover::after{
-    /* border-bottom: #5048EF solid 3px;
-    cursor: pointer;
-    transition: 1s;
-    background:  grey; */
-    /* width: 100%;} */
-/* .Navlinks ul li::after{ */
-    /* content: "";
-    width: 0%;
-    height: 1.5px; */
-    /* border-bottom: #5048EF solid 3px; */
-    /* background: #5048EF;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: 0.5s; */
-    /* background:  grey; */
-/* } */
 .sublinks{
     height: 39px; 
     justify-content: flex-start; 
@@ -71,46 +53,56 @@ select{
     gap: 10px; 
     display: flex;
     font-family: sans-serif;
+    font-size: smaller;
 }
-.sublinks button{
-    flex: 1 1 0; 
-    height: 39px; 
+.sublinks a{
+    text-align: center; 
     width: 145px;
     padding: 10px; 
     border-radius: 10px; 
     border: 0.5px #5048EF solid; 
     justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
-    display: flex;
+    text-decoration: none;
 }
 .sublinks button:hover{
     cursor: pointer;
 
 }
-.SignIn{
-    /* border: 0.5px #5048EF solid; */
+.SignIn{ 
+    border: 0.5px #5048EF solid; 
     background: white;
 }
-.SignIn:hover{
-    /* background: #5048EF; */
-    color: orange;
-    border: 0.5px orange solid; 
-    transition-duration: 0.3s;
+.SignIn:hover{ 
+    background: orange;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
 }
 .SignUpForFree{
     background: #5048EF;
-    color: white;
-    /* border: 0.5px #5048EF solid; */
+    color: white; 
+    border: 0.5px #5048EF solid; 
 }
 .SignUpForFree:hover{
     background: orange;
     color: white;
     border: none;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
-/* height: 29px; padding: 5px; justify-content: center; align-items: center; gap: 10px; display: flex */
-.Header {
+head{
+    background: white;
+    color: #5048EF;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.Head {
     /* width: 1440px;  */
     height: 608px; 
     position: relative; 
@@ -168,9 +160,6 @@ select{
     font-weight: 400; 
     word-wrap: break-word
 }
-/* .design1{
-    width: 1200px; height: 323px; background: #5048EF; border-top-left-radius: 150px; border-top-right-radius: 150px
-} */
  .design2{
     margin-left: 450px;
     margin-top: 40px;
@@ -229,24 +218,122 @@ select{
     position: relative; 
     background: #E1E1E1;
 }
-/* .container {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #000;
+.text7 {
+    align-self: stretch; 
+    height: 82px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 17px; 
+    display: flex;
 }
-.box {
-    position: absolute;
-    width: 100px;
-    height: 100px;
+.text71 {
+    align-self: stretch; 
+    text-align: center; 
+    color: #5048EF; 
+    font-size : 24px; 
+    /* font-family : Segoe UI;  */
+    font-weight: 600; 
+    line-height: 25px; 
+    word-wrap: break-word;
 }
-.box1 {
-    background-color: red;
-    top: 20px;
-    left: 20px;
+.text72{
+    align-self: stretch; 
+    text-align: center; 
+    color: #5048EF; 
+    font-size: 14px; 
+    font-family: Inter Display; 
+    font-weight: 500; 
+    line-height: 20px; 
+    word-wrap: break-word;
 }
-.box2 {
-    background-color: blue;
-    top: 50px;
-    left: 50px;
-} */
+
+footer {
+    background-color: #5048EF;
+    color: #fff;
+    text-align: center;
+    margin-top: 300px;
+}
+.footer-elements {
+    padding: 42px 117px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1206px;
+    margin: 0 auto;
+
+}
+.Newsletter{
+    padding: 20px;
+    height: 258px;
+    width: 338px;
+    background-color:#6c65f3ee ;
+}
+.email-form {
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    flex: 1; /* Makes the input field take up remaining space */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    border-right: none; /* Remove right border to make it look like one element */
+}
+
+.submit-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove left border to make it look like one element */
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.footer-divider {
+    border-top: 0.5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+.footer-section h4 {
+    margin-bottom: 9px;
+    text-align: start;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}

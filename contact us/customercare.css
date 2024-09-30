@@ -1,0 +1,485 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Navbar {
+    height: 125px;
+    padding: 30px 120px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.Navlinks ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.Navlinks ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #5048EF;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+
+.Navlinks ul li:hover {
+    border-bottom: 1px solid orange;
+    cursor: pointer;
+    color: orange;
+}
+
+select {
+    border: none;
+    color: #5048EF;
+    appearance: auto;
+}
+
+.sublinks {
+    height: 39px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+.sublinks a,
+.sublinks button {
+    text-align: center;
+    width: 145px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #5048EF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.SignIn {
+    border: 0.5px solid #5048EF;
+    background: white;
+}
+.SignUpForFree3 {
+    background: #5048EF;
+    color: white;
+    border: 0.5px solid #5048EF;
+}
+.SignIn:hover {
+    background: orange;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
+}
+.SignUpForFree3:hover {
+    background: orange;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+    max-width: 100%; /* Ensures responsiveness */
+    padding: 20px; /* Adds spacing around the content */
+    box-sizing: border-box; /* Includes padding in element's width */
+    font-family: 'Inter Display', sans-serif;
+    color: var(--primary-primary, #5048ef);
+  }
+
+  /* Styling for the contact title */
+  .contact-title {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 0; /* Adds spacing above and below the title */
+    margin: 0; /* Removes default margin */
+    text-align: center; 
+  }
+
+
+  .contact-description {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 0; 
+    max-width: 400px; 
+    line-height: 1.6; 
+    color: #333; 
+  }
+
+/* Styling for the contact form */
+.contact-form {
+    align-content: space-between;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-form1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(/Frame\ 3425.svg) no-repeat ;
+    height: 762px;
+    width: 539px;
+    padding-top: 165px;
+    color: var(--Grays-White, #FFF);
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    row-gap: 30px;
+  }
+
+  .contact-item {
+    margin-top: 15px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 20px;
+  }
+  /* Container for the form elements */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 669px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 60px;
+  }
+  
+  /* Styling for the name fields container */
+  .name-fields {
+    display: flex;
+    gap: 39px; /* Space between the columns */
+    flex-wrap: wrap;
+  }
+  
+  /* Styling for each input group */
+  .input-group {
+    flex: 1; /* Ensures both columns are equal width */
+    min-width: 240px; /* Minimum width for the input fields */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for input labels */
+  .input-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for input fields */
+/* Styling for input fields with only an underline */
+.input-field {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #8d8d8d; /* Line under the input */
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-bottom-color: #5048ef; /* Change line color on focus */
+    outline: none; /* Remove default outline on focus */
+  }
+  
+  
+  /* Container for contact fields like email and phone */
+  .contact-fields {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling for the subject section */
+  .subject-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  
+  /* Container for subject checkboxes */
+  .subject-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #011c2a;
+  }
+  
+  /* Styling for subject title */
+  .subject-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styling for subject options */
+  .subject-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Styling for checkboxes */
+  .option-checkbox {
+    margin-right: 5px;
+  }
+  
+  /* Styling for the labels next to checkboxes */
+  .option-label {
+    font-weight: 500;
+  }
+  
+  /* Styling for the message section */
+  .message-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #8d8d8d;
+    font-weight: 500;
+  }
+  
+  /* Styling for the message label */
+  .message-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Styling for the message input textarea */
+  .message-input {
+    width: 100%;
+    margin-top: 12px;
+    border: none;
+    border-bottom: 1px solid #8d8d8d; /* Line under the input field */
+    padding: 8px 0; /* Padding only on top and bottom */
+    font-size: 14px;
+    background-color: transparent; /* Removes background for a clean look */
+    outline: none; 
+    height: auto; /* Adjust height to content */
+    min-height: 50px; /* Minimum height to maintain some space */
+  }
+  
+  .message-input:focus {
+    border-bottom: 2px solid #5048ef; 
+  }
+  
+  /* Styling for the submit button */
+  .submit-button2 {
+    align-self: flex-end;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #5048ef;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .submit-button2:hover {
+    background-color: #3c3dbf;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .contact-form {
+      padding-bottom: 100px;
+    }
+  
+    .name-fields,
+    .contact-fields {
+      flex-direction: column;
+    }
+  
+    .input-group,
+    .subject-section,
+    .message-section {
+      max-width: 100%;
+    }
+  
+    .submit-button2 {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Visually hidden text for screen readers */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  footer {
+    background-color: #5048EF;
+    color: #fff;
+    text-align: center;
+    /* margin-top: 300px; */
+}
+.footer-elements {
+    padding: 42px 117px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1206px;
+    margin: 0 auto;
+
+}
+.Newsletter{
+    padding: 40px;
+    height: 258px;
+    width: 338px;
+    background-color:#6c65f3ee ;
+    text-align: start;
+    margin-bottom: 60px;
+}
+.Newsletter form {
+    padding: 20px 0px;
+}
+.Newsletter p{
+    font-size: small;
+    font-weight: lighter;
+}
+.email-form {
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    height: 50px;
+    border-right: none; /* Remove right border to make it look like one element */
+}
+
+.submit-button {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove left border to make it look like one element */
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.footer-divider {
+    border-top: 0.5px;
+    /* width: 80%; */
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+.footer-section h4 {
+    margin-bottom: 9px;
+    text-align: start;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: 100%; 
+    padding-top: 30px; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
+.footer-bottom2 ul li{
+    justify-content: center; 
+    align-items: center; 
+    gap: 16px; 
+    display: flex;
+    text-align: center; 
+    color: #5048EF; 
+    font-size: 16px;  
+    font-weight: 400; 
+    word-wrap: break-word;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.footer-bottom2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom2 ul li a:hover{
+    text-decoration: underline;
+}
+.footer-bottom2 p {
+    margin: 5px 0;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+  
